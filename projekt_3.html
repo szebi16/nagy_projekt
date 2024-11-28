@@ -11,10 +11,27 @@
             text-align: center;
             
         }
-        .doboz{
-            padding: 5px;
-            border: solid black 2px;
+        h4{
+            font-size: 15px;
         }
+        .doboz{
+            padding: 20px;
+            border: solid black 2px;
+            background-color:gray;
+            margin-top: 5px;
+        }
+        .p{
+            margin-top: 6px;
+        }
+        .db{
+            padding: 20px;
+        }
+        .m{
+            padding: 30px;
+           
+        }
+      
+
         
 
     </style>
@@ -40,7 +57,7 @@
     </nav>
 
     <div class="container-fluid mt-3">
-        <div class="row ">
+        <div class="row gx-2">
             <div class="col-x col-xl-12 col-md-12">
                 <h3>OSI modell</h3>
             </div>
@@ -48,63 +65,67 @@
     </div>
 
     <div class="container-fluid mt-3">
-        <div class="row gx-2">
-            <div class="col-x col-xl-4 col-md-4">
-                <div class="doboz d-flex">
-                    <div>
+        <div class="row">
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz">
                     <h4>Fizikai réteg:</h4>
-                    <p>A fizikai réteg feladata a bitek kommunikációs csatornára való juttatása.</p>
-                </div>
+                    <p>Ez a legalsó réteg, amely az adatokat fizikai jelekké alakítja, és a hálózati eszközökkel való kommunikációval foglalkozik (pl. kábelek, hálózati adapterek).</p>
                 </div>
             </div>
-
-            <div class="col-x col-xl-4 col-md-4">
-                <div class="doboz d-flex">
-                    <div>
+    
+           
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz">
                     <h4>Adatkapcsolati réteg:</h4>
-                    <p>Az adatkapcsolati réteg biztosítja az adatok átvitelét két hálózati elem között.</p>
-                </div>
+                    <p>Az adatokat keretekké alakítja, és biztosítja a hibamentes adatátvitelt a közvetlenül kapcsolódó hálózati eszközök között.</p>
                 </div>
             </div>
-
-            <div class="col-x col-xl-4 col-md-4">
-                <div class="doboz d-flex ">
-                    <div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz db">
                     <h4>Hálózati réteg:</h4>
-                    <p>A hálózati réteg biztosítja a küldőtől a címzetthez való továbbításához szükséges eljárásokat.</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-x col-xl-4 col-md-4">
-                <div class="doboz d-flex">
-                    <div>
-                    <h4>szállítási réteg:</h4>
-                    <p>A szállítási réteg biztosítja és ellenőrzi egy adott kapcsolat megbízhatóságát.</p>
-                </div>
+                    <p>Az adatok célba juttatásáért felelős, az útvonalválasztást és címzést végzi (pl. IP, ICMP).</p>
                 </div>
             </div>
-
-            <div class="col-x col-xl-4 col-md-4">
-                <div class="doboz d-flex">
-                    <div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz">
+                    <h4>Szállítási réteg:</h4>
+                    <p>Biztosítja az adatok megbízható átvitelét, szegmentálja az adatokat, és hibakezelést végez (pl. TCP, UDP).</p>
+                </div>
+            </div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz db">
                     <h4>Viszony réteg:</h4>
-                    <p>A viszony réteg lehetővé teszi, hogy két számítógép felhasználói kapcsolatot létesítsenek egymással.</p>
-                </div>
+                    <p>A kapcsolatokat hozza létre, kezel és bontja, biztosítja, hogy a kommunikációs csatornák megfelelően működjenek (pl. RPC, NetBIOS).</p>
                 </div>
             </div>
-
-            <div class="col-x col-xl-4 col-md-4">
-                <div class="doboz d-flex">
-                    <div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz db">
                     <h4>Megjelenítési réteg:</h4>
-                    <p>A megjelenítési réteg biztosítja az alkalmazási réteg számára, hogy az adatok a végfelhasználó rendszerének megfelelő formában álljon rendelkezésre.</p>
-                </div>
+                    <p>Az adatokat olyan formátumban alakítja át, amelyet az alkalmazás réteg használhat (pl. titkosítás, kódolás, tömörítés).</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <div class="col-x col-xl-12 col-md-12 " >
+            <div class="row">
+                <div class="doboz m d-flex">
+                    <h4>Alkalmazási réteg: </h4>
+                    <p>A legfelső réteg, amely közvetlen kapcsolatot biztosít a felhasználóval és a hálózati alkalmazásokkal (pl. HTTP, FTP, DNS).</p>
+                </div>
+            </div>
+        </div>
+        </div>
 
     
 </div>
